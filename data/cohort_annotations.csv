@@ -1,0 +1,20 @@
+group,subgroup,group_title,subgroup_title,title,color,group_color,count,order
+visium_hd,FFPE,Visium HD,FFPE,Visium HD (FFPE),#7570b3,#984ea3,15,AA-0
+visium_hd,Fixed_Frozen,Visium HD,Fixed Frozen,Visium HD (Fixed Frozen),#1b9e77,#984ea3,3,AA-1
+visium_hd,Fresh_Frozen,Visium HD,Fresh Frozen,Visium HD (Fresh Frozen),#e7298a,#984ea3,6,AA-2
+visium,FFPE,Visium,FFPE,Visium (FFPE),#d95f02,#377eb8,9,AA-4
+PBMC_scrna,10X_3p_v3,PBMC scRNA,3'v3,PBMC scRNA 3'v3,#fc8d62,#e41a1c,6,AB-1
+PBMC_scrna,10X_3p_v31,PBMC scRNA,3'v3.1,PBMC scRNA 3'v3.1,#8da0cb,#e41a1c,19,AB-2
+PBMC_scrna,10X_3p_v4,PBMC scRNA,3'v4,PBMC scRNA 3'v4,#e78ac3,#e41a1c,9,AB-3
+PBMC_scrna,10X_5p_v2,PBMC scRNA,5'v2,PBMC scRNA 5'v2,#a6d854,#e41a1c,1,AB-4
+PBMC_scrna,10X_5p_v3,PBMC scRNA,5'v3,PBMC scRNA 5'v3,#ffd92f,#e41a1c,1,AB-5
+PBMC_scrna_flex,10X_flex_v1,PBMC scRNA,Flex v1,PBMC scRNA Flex v1,#e5c494,#4daf4a,11,AB-6
+Melanoma,10X_3p_v31,Melanoma,3'v3.1,Melanoma 3'v3.1,#8da0cb,#999999,1,AC-2
+Melanoma,10X_3p_v4,Melanoma,3'v4,Melanoma 3'v4,#e78ac3,#999999,1,AC-3
+Melanoma,10X_5p_v2,Melanoma,5'v2,Melanoma 5'v2,#a6d854,#999999,1,AC-4
+Melanoma,10X_5p_v3,Melanoma,5'v3,Melanoma 5'v3,#ffd92f,#999999,1,AC-5
+Brain,10X_3p_v3,Brain snRNA,3'v3,Brain snRNA 3'v3,#fc8d62,#999999,7,AD-Brain-1
+Colon,10X_5p_v2,Colon,5'v2,Colon 5'v2,#a6d854,#999999,6,AD-Colon-4
+Heart,10X_3p_v3,Heart,3'v3,Heart 3'v3,#fc8d62,#999999,13,AD-Heart-1
+OvaryCA_CD45m,10X_3p_v3,OVCA CD45(-),3'v3,OVCA CD45(-) 3'v3,#fc8d62,#999999,19,AD-OvaryCA_CD45m-1
+OvaryCA_CD45p,10X_3p_v3,OVCA CD45(+),3'v3,OVCA CD45(+) 3'v3,#fc8d62,#999999,20,AD-OvaryCA_CD45p-1
