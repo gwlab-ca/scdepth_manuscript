@@ -9,7 +9,7 @@ The [scdepth](https://github.com/gwlab-ca/scdepth) python package must be instal
 
 The Snakefile contains the pipeline used to generate all analyses from the raw BAM, GTF, position, and probe inputs.
 
-By default, the workflow does not attempt to regenerate cached tag files for samples that do not already have them available locally. A subset of the raw inputs needed for cache generation can be downloaded from Zenodo. After downloading, extract any desired raw_*.tar archives into the root of this repository.
+By default, samples without precomputed cache files are skipped unless the corresponding raw inputs have been unpacked locally. A subset of the raw inputs needed for cache generation can be downloaded from Zenodo. After downloading, extract any desired raw_*.tar archives into the root of this repository.
 
 ```
 # Any subset of these archives may be used
