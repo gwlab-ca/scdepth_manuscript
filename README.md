@@ -5,9 +5,32 @@ The [scdepth](https://github.com/gwlab-ca/scdepth) python package must be instal
 
 ## Notes
 
- * The Snakefile contains the pipeline that was used to generate all of the analyses from the raw bam/gtf/position/probe data
- * The Snakefile is setup to ignore generating cached tags.  A subset of the raw cached tag data can be downloaded from [Zenodo](https://dx.doi.org/10.5281/zenodo.15518941). The `raw_*.tar` files must be extracted into the root of this repository
- * The jupyter notebooks to generate all of the Figures and Table S1 are in [notebooks](./notebooks)
- * The Table S1.ipynb notebook should be run first
- * The `processed.tar` file can also be downloaded from [Zenodo](https://dx.doi.org/10.5281/zenodo.15518941). It contains all the data necessary to run the notebooks
- * The `processed.tar` file must be extracted in the root of this repository
+### Running the Snakefile
+
+The Snakefile contains the pipeline used to generate all analyses from the raw BAM, GTF, position, and probe inputs.
+
+By default, the workflow does not attempt to regenerate cached tag files for samples that do not already have them available locally. A subset of the raw inputs needed for cache generation can be downloaded from Zenodo. After downloading, extract any desired raw_*.tar archives into the root of this repository.
+
+```
+# Any subset of these archives may be used
+tar -xvf raw_scrna.tar
+tar -xvf raw_scrna_flex.tar
+tar -xvf raw_visium.tar
+tar -xvf raw_visium_hd.tar
+
+snakemake --rerun-trigger mtime -j <jobs>
+```
+
+### Generating the figures
+
+Running the Snakefile is not required to generate the manuscript figures. Only processed.tar is needed.
+
+The Jupyter notebooks used to generate all figures and Table S1 are located in notebooks/. Run notebooks/TableS1.ipynb first; the remaining notebooks can then be run in any order.
+
+The `processed.tar` archive, available from Zenodo, contains all data required to run the notebooks. Extract it into the root of this repository:
+
+```
+tar -xvf processed.tar
+jupyter lab
+# Run notebooks/TableS1.ipynb first, then the remaining notebooks in any order
+```
