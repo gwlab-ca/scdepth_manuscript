@@ -34,3 +34,6 @@ tar -xvf processed.tar
 jupyter lab
 # Run notebooks/TableS1.ipynb first, then the remaining notebooks in any order
 ```
+
+*Note*
+For PBMC Parse WT v3 based analyses the raw tags and processed data is available in the Zenodo archive under Parse_WT_PBMC.tar. This is required to use the Supplemental Note 2 notebook.
